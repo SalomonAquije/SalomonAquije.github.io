@@ -1,0 +1,43 @@
+
+   h2 { /* este estilo afecta a toos los h2 de indx2.html */
+         font-size: 5em;
+         color: brown;
+         background-color: yellow;
+ 
+      }
+
+      .textomorado {    /*clase css que aplica color verde y fuente LucidaSans */ 
+           color: green;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .clasecontenedorDiv1 {  /* afectara a alguno contenedores div */
+         font-size: 40px;
+         width: 800px;
+         height: 600px;
+         background-color: dimgray;
+
+      }
+
+
+      #fondonaranja {  /* identificador que solo afecta a una etiqueta */
+
+         background-color: firebrick;
+         font-size: 30px;
+         text-align: center;
+
+
+      }
+
+      .textomorado:hover {  /* seudolase que afecta al posicionarte con el mouse  */
+
+        background-color: darkorchid;
+        color: darkolivegreen;
+
+           }
+
+    .clasecontenedorDiv1::first-letter {  /* seudoelemento que afecta a la primera letra */
+
+            font-size: 80px;
+            color: deeppink;
+           }
