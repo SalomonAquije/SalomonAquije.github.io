@@ -1,43 +1,141 @@
+h2 { /* este estilo afecta a todos los h2 de INDEX2.html */
 
-   h2 { /* este estilo afecta a toos los h2 de indx2.html */
-         font-size: 5em;
-         color: brown;
-         background-color: yellow;
- 
-      }
+   font-size: 50px;
+   color: rgb(14, 116, 102);
+   background-color: darkkhaki;
+}
 
-      .textomorado {    /*clase css que aplica color verde y fuente LucidaSans */ 
-           color: green;
-           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }
+.textomorado {  /* clase css que aplica color morado y fuente LucidaSAns */
+  color: blueviolet; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-      .clasecontenedorDiv1 {  /* afectara a alguno contenedores div */
-         font-size: 40px;
-         width: 800px;
-         height: 600px;
-         background-color: dimgray;
+.claseContenedorDiv1 { /* afectara a algunos contenedores div */
+   font-size: 40px;
+   width: 800px;
+   height: 600px;
+   background-color: rgb(238, 255, 0);
 
-      }
+}
+
+#fondonaranja {  /* identificador que solo afecta a una etiqueta */
+   background-color: rgb(199, 154, 65);
+   font-size: 30px;
+   text-align: center;
+}
+
+.textomorado:hover { /* pseudoclase que afecta al posicionarte con mouse */
+   background-color: rgb(255, 127, 249);
+   color: rgb(51, 95, 6);
+
+}
+
+.claseContenedorDiv1::first-letter {
+/* seudoelelmento que afecta a la primera letra*/
+font-size: 80px;   
+color: crimson;
+}
 
 
-      #fondonaranja {  /* identificador que solo afecta a una etiqueta */
+.clase_Static {
+   font-size: 20px;
+   background-color: aqua;
+   position:static;  
+   margin-top: 0px;
+  margin-left:20px ;
+  margin-right:80px; 
+}
 
-         background-color: firebrick;
-         font-size: 30px;
-         text-align: center;
+.clase_Static2 {
+   font-size: 20px;
+   background-color: aqua;
+   position:static;  
+   top: 20px;  /* esto no funciona en static */
+   left:80px ;  /* esto no funciona en static */
+   right:200px;  /* esto no funciona en static */
+   
+}
+
+.clase_Relative{
+   font-size: 20px;
+   background-color: rgb(187, 218, 77); 
+   height: 250px;
+   width: 200px;
+}
+.clase_Relative:hover {
+   position:relative; 
+   top: 100px;
+   left: 100px;
+   z-index: -5;
+   /* z-index para colocar adelante o atras en profundidad respecto a otro elemento  */
+}
+
+.clase_Relative2{
+   font-size: 20px;
+   background-color: rgb(187, 218, 77); 
+   height: 250px;
+   width: 200px;
+}
+.clase_Relative2:hover {
+   position:relative; 
+   margin-top: 100px;
+   margin-left: 100px;
+   
+   
+}
 
 
-      }
+.clase_absolute {
+font-size: 20px;
+background-color: rgb(red, green, blue);
+height: 250px;
+width: 200px;
+position: absolute;
+top: 7100px;
+left: 100px;
 
-      .textomorado:hover {  /* seudolase que afecta al posicionarte con el mouse  */
+}
 
-        background-color: darkorchid;
-        color: darkolivegreen;
+.clase_Relative3 {
+   font-size: 20px;
+   background-color: chartreuse;
+   height: 250px;
+   width: 200px;
+   position: relative;
 
-           }
+}
 
-    .clasecontenedorDiv1::first-letter {  /* seudoelemento que afecta a la primera letra */
+.clase_AbsoluteRelative {
+   font-size: 20px;
+   background-color: chartreuse;
+   height: 250px;
+   width: 150px;
+   position: absolute;
+   bottom: 300px;
+   left: 600px;
+   z-index: -5;
+}
 
-            font-size: 80px;
-            color: deeppink;
-           }
+.clase_Fixed {
+   height: 175px;
+   width: 175px;
+   position: fixed;
+   left: 1150px;
+   bottom: 10px;
+}
+
+.marca_agua {
+   opacity: 0.3;
+   pointer-events: none;
+   z-index: 999;
+}
+
+
+.clase_Sticky{
+   position: sticky;
+   font-size: 40px;
+   top: 0px;
+   left: 40px;
+   height: 300px;
+
+}
