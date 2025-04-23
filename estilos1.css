@@ -208,3 +208,40 @@ left: 100px;
 background-color: chocolate;
 
 }
+
+.claseNav ul{
+   list-style-type: none ;
+   display: block;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+.claseNav li a {
+   text-decoration: none;
+   padding: 6px 11p
+   x;
+   display: block;
+
+}
+
+.claseNav >li{
+   float: left;
+
+
+}
+
+
+.claseNav li ul{
+    display: none;
+    position: absolute;
+   min-width: 140px;
+
+
+}
+
+.claseNav li:hover>ul{
+   display: block; 
+   background-color: brown;
+
+}

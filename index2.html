@@ -18,11 +18,37 @@
       <a class="claseNav" href="https://www.digemid.minsa.gob.pe/webDigemid/preguntas-frecuentes/" target="_blank"> CONTACTO </a>
 
     </nav>
-
+     
+    <h1>MENU SECUNDARIO con SUBMENU</h1>
+    <nav >
+      <ul class="claseNav">
+         <li> <a  href="https://www.gob.pe/indecopi">  INDECOPI   </a>
+             <ul>  <!-- INICIO SUBMENU -->
+                   <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/deudas-o-multas">  DEUDAS Y MULTAS </a> </li>
+                   <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/reclamos">  RECLAMOS </a> </li>
+             </ul>
+         </li>
+   
+         <li> <a  href="https://www.defensoria.gob.pe/">  DEFENSORIA DEL PUEBLO     </a>
+              <ul>  <!-- INICIO SUBMENU -->
+                  <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/deudas-o-multas">  SUBMENU 1 </a> </li>
+                  <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/reclamos">  SUBMENU 2 </a> </li>
+              </ul>
+         </li> 
+     </ul>
+   
+     </nav>
 
 
 
     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
 
     <h1 style="background-color: rgb(129, 102, 172);" > 
         PAGINA CON CSS  
@@ -327,6 +353,63 @@ las doscientas millas, de conformidad con la ley y
   </p>
 
   <a href="#POSICIONINICIAL">VOLVER AL INICIO</a>
+
+
+  <h2> FORMULARIO DE REGISTRO </h2>
+
+   <form action="INDEX.html" method="post">
+    <p> <label for="nombre"> NOMBRE: <input type="text"  id="nombre">     </label></p>
+    <p> <label for="apellido"> APELLIDO: <input type="text"  id="apellido">     </label></p>
+    <p> <label for="edad"> EDAD: <input type="text"  id="edad">     </label></p>
+    <p> <label for="observación"> OBSERVACIÓN: <textarea name="observación" id="observación"  style="height: 180px;  width: 300px;  font-size: 25px;"></textarea></label></p>
+
+
+    <p>
+      <label for="Estatura"> Estatura  
+          <select name="grupoestatura" id="estatura"> 
+            <option value="Seleccione"> Seleccione </option> 
+            <option value="menor de 1.50m"> menor de 1.50m </option>  
+            <option value="de 1.50m a 1.59"> de 1.50m a 1.59 </option> 
+            <option value="de 1.60m a 1.69"> de 1.60m a 1.69 </option> 
+            <option value="mayor o igual a 1.70m"> mayor o igual a 1.70m </option> 
+          
+          
+          </select>
+
+
+
+
+      </label>
+
+    </p>
+
+    <p> <label> Curso llevados  </label>
+      <br>
+         <input type="checkbox" name="cursos" value="matematica" id="matematica">
+           <label for="matematica"> matematica</label> <br>
+         <input type="checkbox" name="cursos" value="Lenguaje dss" id="LDSS">
+           <label for="LDSS"> Lenguaje dss</label> <br>
+         <input type="checkbox" name="cursos" value="Introduccion investigacion" id="intro_inv">
+           <label for="intro_inv"> Introduccion investigacion </label> <br>
+         <input type="checkbox" name="cursos" value="Nuevas tendencias" id="Nuevas_tendencias">
+           <label for="Nuevas_tendencias"> Nuevas tendencias</label>
+  
+    
+    </p>
+    <label for="fecha"> SELECCIONE FECHA: 
+      <input style="font-size:25px" type="date" name="fecha" id="fecha">
+  </label>
+    <br><br>
+  <button type="submit" style="font-size:30px ;" > enviar </button>
+
+   </form>
+
+
+
+
+
+
+
 
 </body>
 </html>
