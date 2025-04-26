@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos1.css">
+    <script type="text/javascript" src="SCRIPT.JS">  </script>
 
     <title> INSTITUTO CERTUS- PAGINA CON CSS</title>
 </head>
@@ -461,10 +462,37 @@ las doscientas millas, de conformidad con la ley y
    </form>
 
 
+    <div id="resultado" style="font-size: 30px;"> contenedor Resultado en java script 
+       <div id="resultado" style="font-size: 30px;">
+      <p> OPERACIÓN SUMA </p>
+       </div>
+    </div>
+   <script>
 
+    window.alert( "Bienvenidos");
+    var valor1 = 20;
+    var valor2 = 60;
+    var suma = valor1 +valor2;
+    var resta = valor1 -valor2;
+    var multiplicación = valor1 *valor2;
+    var división = valor1 /valor2;
+    document.write("<br> <br><br>")
+    
+    console.log("El valor de la suma de", valor1,"con",valor2,"es:",suma);
+    console.log("El valor de la resta de", valor1,"con",valor2,"es:",resta);
+    console.log("El valor de la multiplicación de", valor1,"con",valor2,"es:",multiplicación);
+    console.log("El valor de la división de", valor1,"con",valor2,"es:",división);
+    document.getElementById('resultado').innerHTML="Resultado suma ="+suma;
 
+    </script>
 
+    <section>
+        <h1 style="font-size: 40px;">MANIPULACION DEL DOM</h1>
+        <p id="ejmDOM1" style="font-size: 25px;"> Este es un texto inicial a aplicar DOM</p>
 
+        <button style="font-size: 25px;" onclick="FCambioColor()"> CAMBIO COLOR</button>
+
+    </section>
 
 
 </body>
