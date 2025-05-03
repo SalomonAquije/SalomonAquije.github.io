@@ -359,9 +359,9 @@ las doscientas millas, de conformidad con la ley y
   <h2> FORMULARIO DE REGISTRO </h2>
 
    <form action="INDEX.html" method="post">
-    <p> <label for="nombre"> NOMBRE: <input type="text"  id="nombre" required>     </label></p>
-    <p> <label for="apellido"> APELLIDO: <input type="text"  id="apellido">     </label></p>
-    <p> <label for="edad"> EDAD: <input type="number"  id="edad" min="18" max="80">     </label></p>
+    <p> <label for="nombre"> NOMBRE: <input type="text"  id="nombre"  class="datosclassPersonales" required>     </label></p>
+    <p> <label for="apellido"> APELLIDO: <input type="text"  id="apellido" class="datosclassPersonales">     </label></p>
+    <p> <label for="edad"> EDAD: <input type="number"  id="edad" class="datosclassPersonales" min="18" max="80">     </label></p>
     <p> <label for="observación"> OBSERVACIÓN: <textarea name="observación" id="observación"  style="height: 180px;  width: 300px;  font-size: 25px;"></textarea></label></p>
 
 
@@ -457,6 +457,8 @@ las doscientas millas, de conformidad con la ley y
 
 <br><br>
 
+<button style="font-size: 30px;" type="button" onclick="FCapturarNombre()">Copiar Nombre a observaciones</button>
+
   <button type="submit" style="font-size:30px ;" > enviar </button>
 
    </form>
@@ -498,8 +500,19 @@ las doscientas millas, de conformidad con la ley y
         <button style="font-size: 25px;" onclick="FCambioClase1()"> CAMBIO POR CLASE</button>
         <button style="font-size: 25px;" onclick="FCambioTag1()"> CAMBIO PO TAG H2</button>
 
-    </section>
+        <h2> AGREFACION DE TEXTO CON CONCATENACION PERMANENTE </h2>
 
+        <button onclick="FAgregarTextoPermanente()"> Agregar texto a primera variable </button>
+
+    </section>
+      
+    <h2> USO DE CREATE ELEMENT </h2>
+
+     <section id="idCrearH1">
+      
+
+      <button onclick="FcreateH1()"> CREAR H1</button>
+     </section>
 
 </body>
 </html>
