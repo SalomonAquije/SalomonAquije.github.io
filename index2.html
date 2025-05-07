@@ -359,10 +359,10 @@ las doscientas millas, de conformidad con la ley y
   <h2> FORMULARIO DE REGISTRO </h2>
 
    <form action="INDEX.html" method="post">
-    <p> <label for="nombre"> NOMBRE: <input type="text"  id="nombre"  class="datosclassPersonales" required>     </label></p>
-    <p> <label for="apellido"> APELLIDO: <input type="text"  id="apellido" class="datosclassPersonales">     </label></p>
-    <p> <label for="edad"> EDAD: <input type="number"  id="edad" class="datosclassPersonales" min="18" max="80">     </label></p>
-    <p> <label for="observación"> OBSERVACIÓN: <textarea name="observación" id="observación"  style="height: 180px;  width: 300px;  font-size: 25px;"></textarea></label></p>
+    <p> <label for="nombre"> NOMBRE: <input type="text" name="nombre" id="nombre"  class="datosPersonales" required>     </label></p>
+    <p> <label for="apellido"> APELLIDO: <input type="text" name="apellido" id="apellido" class="datosPersonales">     </label></p>
+    <p> <label for="edad"> EDAD: <input type="number"  id="edad" name="edad" class="datosPersonales" min="18" max="80">     </label></p>
+    <p> <label for="observacion"> OBSERVACIÓN: <textarea name="observacion" id="observacion"  style="height: 180px;  width: 300px;  font-size: 25px;"></textarea></label></p>
 
 
     <p>
@@ -513,6 +513,21 @@ las doscientas millas, de conformidad con la ley y
 
       <button onclick="FcreateH1()"> CREAR H1</button>
      </section>
+
+     <section> 
+
+      <h2> USO DE FOR clasico y condicionales en una class </h2>
+    
+       <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+        <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+        <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+        <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+    
+        <button style="font-size:25px ;" onclick="FUsoFor1()">
+           Reporte de classFOR1</button>
+        <button style="font-size:25px ;" onclick="FEliminarConcat()">
+            Eliminar concatenacion</button>   
+    </section>
 
 </body>
 </html>
