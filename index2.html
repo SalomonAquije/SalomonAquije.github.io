@@ -384,6 +384,12 @@ las doscientas millas, de conformidad con la ley y
 
     </p>
 
+    <p style="font-size: 20px;"> <label for="numColegios"> Numero Colegios que estudió: <input type="number" 
+      id="numColegios"
+       name="numColegios"  style="font-size: 20px;" min="1" max="12"> </label> </p>
+
+       <div id="DetalleColegios"> DEtalle Estudios: </div>
+
     <p> <label> Curso llevados  </label>
       <br>
          <input  type="checkbox" name="cursos" value="matematica" id="matematica">
@@ -458,6 +464,12 @@ las doscientas millas, de conformidad con la ley y
 <br><br>
 
 <button style="font-size: 30px;" type="button" onclick="FCapturarNombre()">Copiar Nombre a observaciones</button>
+<br><br>
+
+<button style="font-size: 30px;" type="button" onclick="FValidarCiclo()">Enviar ciclo de observación</button>
+<br><br>
+
+<button style="font-size: 30px;" type="button" onclick="FCrearDatosCiclo ()">Enviar ciclo observación automático</button>
 
   <button type="submit" style="font-size:30px ;" > enviar </button>
 
